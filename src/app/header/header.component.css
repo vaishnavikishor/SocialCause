@@ -1,0 +1,376 @@
+*{
+    margin: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border: border-box;
+}
+
+/* General */
+img{
+    overflow-clip-margin: content-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.row{
+    margin-bottom: -30px;
+}
+
+.header-mobile-top .container{
+    width: 100%;
+    height: 65px;
+}
+.header-area{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 0px;
+    width: 100%;
+    z-index: 99;
+    background-color: #fff;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+    padding-bottom: 28px;
+}
+
+.header-menu ul li a{
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: all 0.15s linear;
+    display: block;
+    white-space: nowrap;
+}
+
+.header-menu ul li ul{
+    display: block;
+}
+
+ul{
+    padding: 0 ;
+    list-style-type: none;
+}
+
+/* 
+-------------------------------------------------------------------------
+
+Menu General */
+
+.nav-menu-title, .sub-menu-item, .sub-menu-title{
+    text-decoration: none;
+    color: black;
+    border-bottom:solid white 1px;
+}
+
+.nav-menu-title:hover, .sub-menu-item:hover, .sub-menu-title:hover{
+    text-decoration: underline ;
+    font-weight: 500;
+    color: #489140;
+
+}
+
+
+.header-menu ul li:hover> .sub-menu{
+    visibility: visible;
+    position: absolute;
+    display: block;
+} 
+
+.nav-menu .nav-menu-blog .sub-menu li:hover .sub-menu-blog{
+    visibility: visible;
+    position: absolute;
+    display: block;
+} 
+
+.header-menu ul li:hover > .sub-menu, .header-menu ul li:hover>.mega-sub-menu{
+    visibility: visible;
+    opacity: 1;
+}
+
+.header-menu ul{
+    padding: 10px 18px 28px 18px;
+}
+
+
+/* Search Bar */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(247, 247, 247);
+    width: 1000px;
+    height: 40px;
+    border:2px solid #000000;
+    border-radius: 5px;
+}   
+
+.search-select{
+    background-color: #F3F3F3;
+    width: 50px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    padding: 5px;
+    font-size: 0.8rem;
+    color: #4f4f4f;
+}
+
+.search-input{
+    width: 100%;
+    padding: 10px 10px 10px 6px;
+    font-size: 1rem;
+    border: none;
+}
+
+.search-icon{
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #0F1111;
+}
+
+
+
+/* 
+-----------------------------------------------------------------------
+Right bar
+
+Header Logo */
+.header-logo{
+    margin-top: -12px;
+}
+
+.right-icons{
+    margin-top: -6px;
+}
+/* Searchar */
+
+.nav-search{
+    padding: auto 10px auto 10px; 
+}
+
+.nav-right-icon{
+    color: #000000;
+}
+
+.nav-searchbar-input{
+    width: 100%;
+    border-radius: 5px 0px 0px 5px;
+    border: 2px solid #489140;
+    border-right: none;
+    margin: 10px 0px 10px 15px ;
+    margin-right: 0px;
+    padding: 5px 2px 5px 20px;
+}
+
+.nav-searchbar-icon{
+    color: #808080;
+    border: 2px solid #489140;
+    padding: 9px;
+    margin: 10px 15px 10px 0px;
+    margin-left: 0px;
+    border-left: none;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.drop-menu{
+    width: 300px;
+    left: 0;
+}
+
+.btn{
+    background-color: none;
+    border: none;
+}
+
+.btn:hover{
+    border: none;
+}
+
+
+/* Profile */
+
+.nav-profile{
+    padding-left: 6px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    right: 0;
+    transition: all 0.2s ease-in;
+}
+  
+  /* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 0px;
+    width: 150px;
+    text-decoration: none;
+    display: block;
+    transition: all 0.15s ease-in;
+}
+  
+  /* Change color of dropdown links on hover */
+.right-menu-item:hover {
+    background-color: none;
+    color: #489140;
+    text-decoration: underline;
+    transition: all 0.15s ease-in;
+}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+
+
+/* Cart and wishlist */
+.nav-right-icon-link{
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-right-icon-link:hover{
+    color: #000000;
+    text-decoration: none;
+}
+
+.nav-right-menu-mobile{
+    scale: 80%;
+    top: 50%;
+}
+/*
+
+-----------------------------------------------------------------------------------------
+
+Mobile-UI
+
+*/
+
+.header-mobile{
+    background-color: #fff;
+    width: 100%;
+    height: 65px;
+    box-shadow: 5px 0px 10px rgba(0,0,0,0.5);
+}
+
+.header-logo-mobile{
+    scale: 60%;
+}
+
+/* Sidepanel */
+
+.sidepanel {
+    height: 100%;
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #ffffff; /* Black*/
+    overflow: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+
+/* The sidepanel menu */
+.sidepanel-menu-list{
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.sidepanel-menu-caret{
+    color: #fff;
+    font-size: 1rem;
+
+}
+.sidepanel-menu-caret h6{
+    margin: 0;
+    font-weight: 900;
+}
+
+.sidepanel-menu-caret i{
+    font-size: 1.3rem;
+    padding-right: 17px;
+}
+
+.sidepanel-menu-top-center a{
+    font-size: 1rem;
+    text-decoration: underline;
+    color: #000000;
+}
+
+.sidepanel-menu-top-center a:hover{
+    color: #489140;
+    text-decoration: underline;
+}
+
+.sidepanel-menu-nav p{
+    font-size: 1rem;
+    font-weight: 600;
+    width: 10px;
+    margin: 0;
+    padding: 4px 10px 4px 10px;
+}
+
+.sidepanel-menu-nav p:nth-child(2){
+    font-size: 1.3rem;
+    padding: 0;
+    padding-right: 30px;
+}
+
+.sidepanel-menu-list a{
+    border-top: 1px solid #e2e2e2;
+}
+
+/* The sidepanel links */
+.sidepanel-menu-list a, .sidepanel-menu-nav a{
+    padding: 2px 8px 4px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000000;
+    display: block;
+}
+
+.sidepanel-menu-nav a{
+    color: #000000;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 4px 6px;
+    border: none;
+}
+.sidepanel-menu-list a:hover, .sidepanel-menu-nav a{
+    color: #000000;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel-menu-caret ,.sidepanel .closebtn {
+    background-color: #252c51;
+    height: 40px;
+    text-decoration: none;
+}
+
+/* Style the button that is used to open the sidepanel */
+.openbtn {
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: rgba(0,0,0,0) ;
+    color: #000000;
+    border: none;
+}
+
+.openbtn:hover {
+    cursor: pointer;
+}
+
+.nav-profile-mobile{
+    scale: 85%;
+}
+
+.nav-icon-mobile{
+    scale: 90%;
+}

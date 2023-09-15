@@ -1,0 +1,68 @@
+<app-header></app-header>
+<div class="img-content">
+  <p class="text">Social Events</p>
+<div class="slideshow-container">
+    <div class="slide" *ngFor="let n of images; let i = index" [class.active]="i === activeIndex">
+      <img [src]="n.url" alt="Slide Image">
+
+    </div>
+  
+    <a class="prev" (click)="prevSlide1()">&#10094;</a>
+    <a class="next" (click)="nextSlide1 ()">&#10095;</a>
+  </div>
+</div>
+<div class="container">
+  <div class="row">
+      <div class="mt-5 d-flex flex-column align-items-center description">
+          <h3>SOCIAL GATHERING</h3>
+          <p>Prepare to elevate your social calendar! Our application connects you with the most 
+              happening parties and social gatherings in your vicinity. You'll receive comprehensive 
+              information about each event, encompassing its offerings and precise location. 
+              Furthermore, you can peruse visual content, including photos and videos, thoughtfully 
+              shared by fellow attendees. Whether your preferences lean towards lively celebrations 
+              or more relaxed gatherings, rest assured, we have your preferences catered to!
+          </p>
+      </div>
+  </div>
+</div>
+<!-- End Description -->
+
+<!-- Buttons/Options -->
+<div class="my-5 container">
+  <div class="row">
+      <div class="choices d-flex align-items-top justify-content-between">
+          <div class="col-2"></div>
+          <button class="host choice-button col-3" style="background-image: url(/assets/host.jpg);">
+          </button>
+          <div class="col-2"></div>
+          <button class="choice-button col-3" style="background-image: url(/assets/join.jpg);">
+          </button>
+          <div class="col-2"></div>
+      </div>
+  </div>
+</div>
+<!-- End Buttons/Options -->
+
+<!-- Success Stories-->
+<div class="suc-story mt-5 pt-5 container">
+  <h3 class="col-12">PEOPLE'S STORIES</h3>
+  <div class="my-2 story d-flex align-items-center">
+      <div class="col-5 story-img" style="background-image: url(/assets/gansesh.jpg);">
+      </div>
+      <div class="d-flex flex-column align-items-center col-7" >
+          <h4>Ganesh Chaturthi Bliss: Celebrating Lord Ganesha</h4>
+          <p>A truly special day celebrated with the warmth of family and the joy of friends, creating
+              unforgettable moments filled with devotion, laughter, and cherished memories.</p>
+      </div>
+  </div>
+  <div class="my-2 story d-flex align-items-center">
+      <div class="d-flex flex-column align-items-center col-7" >
+          <h4>Melody Mania: Karaoke Night</h4>
+          <p>A fun-filled evening where people sing along to their favourite songs with friends and family.</p>
+      </div>
+      <div class="col-5 story-img" style="background-image: url(/assets/kario.jpg);">
+
+      </div>
+  </div>
+</div>
+<app-footer></app-footer>

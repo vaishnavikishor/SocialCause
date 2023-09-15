@@ -1,0 +1,67 @@
+<app-header></app-header>
+<div class="img-content">
+  <p class="text">Community Work</p>
+  <div class="slideshow-container">
+      
+        <div class="slide" *ngFor="let n of images; let i = index" [class.active]="i === activeIndex">
+          <img [src]="n.url" alt="Slide Image">
+        </div>
+      
+        <a class="prev" (click)="prevSlide1()">&#10094;</a>
+        <a class="next" (click)="nextSlide1 ()">&#10095;</a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="mt-5 d-flex flex-column align-items-center description">
+              <h3>COMMUNITY WORK</h3>
+              <p>Engage actively in community endeavors and undertakings directed towards effecting positive change. Participants are encouraged to assume leadership roles in orchestrating events that involve the community, ranging from area clean-up initiatives to road maintenance and aiding the homeless. Our platform introduces a structured rewards program, wherein successful participation in three community events culminates in the acquisition of a commendable prize.
+              </p>
+          </div>
+      </div>
+    </div>
+    <!-- End Description -->
+    
+    <!-- Buttons/Options -->
+    <div class="my-5 container">
+      <div class="row">
+          <div class="choices d-flex align-items-top justify-content-between">
+              <div class="col-2"></div>
+              <button class="host choice-button col-3" style="background-image: url(/assets/host.jpg);">
+              </button>
+              <div class="col-2"></div>
+              <button class="choice-button col-3" style="background-image: url(/assets/join.jpg);">
+              </button>
+              <div class="col-2"></div>
+          </div>
+      </div>
+    </div>
+    <!-- End Buttons/Options -->
+    
+    <!-- Success Stories-->
+    <div class="suc-story mt-5 pt-5 container">
+      <h3 class="col-12">PEOPLE'S STORIES</h3>
+      <div class="my-2 story d-flex align-items-center">
+          <div class="col-5 story-img" style="background-image: url(/assets/cloth.jpg);">
+          </div>
+          <div class="d-flex flex-column align-items-center col-7" >
+              <h4>Threads of Love: Clothing Drive</h4>
+              <p>A group of grade 8 boys recently teamed up to collect more than 2,500 articles of clothing, which
+                were donated to the Savior foundation. The drive took place over a three-week period and helped
+                over 5,000 people.</p>
+          </div>
+      </div>
+      <div class="my-2 story d-flex align-items-center">
+          <div class="d-flex flex-column align-items-center col-7" >
+              <h4>Rains to Recovery: Disaster Relief Effort in Himachal</h4>
+              <p>Amidst the torrential rains and rising waters in Himachal, our dedicated team stands united, working
+                tirelessly to provide immediate relief, shelter, and hope to those affected.</p>
+          </div>
+          <div class="col-5 story-img" style="background-image: url(/assets/flood.jpg);">
+    
+          </div>
+      </div>
+    </div>
+
+    
+<app-footer></app-footer>
